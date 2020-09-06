@@ -254,16 +254,6 @@ REDHEADS = [
     "gingerporn",
     "AlexTanner",
 ]
-RULE_34 = [
-    "rule34",
-    "rule34cartoons",
-    "Rule_34",
-    "Rule34LoL",
-    "AvatarPorn",
-    "Overwatch_Porn",
-    "Rule34Overwatch",
-    "WesternHentai",
-]
 SQUIRTS = ["GushingGirls", "squirting_gifs", "squirting"]
 THIGHS = ["Thighs", "ThickThighs", "thighhighs", "Thigh", "leggingsgonewild", "legsup"]
 THREESOME = ["groupsex", "Threesome", "amateur_threesomes", "Xsome"]
