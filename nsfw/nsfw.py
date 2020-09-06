@@ -372,15 +372,6 @@ class Nsfw(Core):
     @nsfwcheck()
     @commands.bot_has_permissions(embed_links=True)
     @commands.cooldown(1, 0.5, commands.BucketType.user)
-    @commands.command(aliases=["r34"])
-    async def rule34(self, ctx: commands.Context):
-        """Show some rule34 images from random subreddits."""
-
-        await self._send_msg(ctx, _("rule34"), sub=sub.RULE_34)
-
-    @nsfwcheck()
-    @commands.bot_has_permissions(embed_links=True)
-    @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["squirts"])
     async def squirt(self, ctx: commands.Context):
         """Show some squirts images from random subreddits."""
