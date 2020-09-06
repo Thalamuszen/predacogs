@@ -35,6 +35,10 @@
 
 ## Cogs
 
+```
+NSFW EDITED TO REMOVE RULE34/R34 COMMAND SO IT CAN BE USED ALONGSIDE BOORU COMMAND
+```
+
 | Name | Description (Click for more details) |
 | ---- | ----------- |
 | [Nsfw](https://github.com/PredaaA/predacogs/tree/master/nsfw) | <details><summary>Send random NSFW images from random subreddits and Nekobot API.</summary>Send random NSFW images from random subreddits and Nekobot API in NSFW only channels.<br>Important note: As indicated in name of this cog, it contains mature content and is not suited for all audiences, use it responsibly.</details>
