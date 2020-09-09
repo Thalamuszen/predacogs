@@ -18,6 +18,8 @@ _ = Translator("Image", __file__)
 # TODO Needs a good rewrite and simplification.
 # TODO Implement the possibility to use my API as an option untoggled by default.
 
+    __author__ = "Predä"
+    __version__ = "1.1.9"
 
 @cog_i18n(_)
 class Core(commands.Cog):
@@ -32,11 +34,6 @@ class Core(commands.Cog):
 
     def cog_unload(self):
         self.bot.loop.create_task(self.session.close())
-
-    def format_help_for_context(self, ctx: commands.Context) -> str:
-        """Thanks Sinbad!"""
-        pre_processed = super().format_help_for_context(ctx)
-        return f"{pre_processed}\n\nAuthor: {self.__author__}\nCog Version: {self.__version__}"
 
     async def _get_reddit_imgs_simple(self, ctx: commands.Context, sub: list):
         """Get images from Reddit API."""
