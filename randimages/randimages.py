@@ -10,7 +10,7 @@ _ = Translator("Image", __file__)
 
 @cog_i18n(_)
 class RandImages(Core):
-    """Send random images (animals, art ...) from different APIs."""
+    """Send random images of animals and more."""
 
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.bot_has_permissions(embed_links=True)
@@ -26,7 +26,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command()
     async def birb(self, ctx: commands.Context):
-        """Send a random birb image from alexflipnote API."""
+        """Send a random birb image."""
 
         await self._send_other_msg(
             ctx,
@@ -42,7 +42,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command(aliases=["cats"])
     async def cat(self, ctx: commands.Context):
-        """Send a random cat image some-random-api.ml API."""
+        """Send a random cat image."""
 
         await self._send_other_msg(
             ctx,
@@ -58,7 +58,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command(aliases=["catsfact"])
     async def catfact(self, ctx: commands.Context):
-        """Send a random cat fact with a random cat image from some-random-api.ml API."""
+        """Send a random cat fact with a random cat image."""
 
         await self._send_other_msg(
             ctx,
@@ -76,7 +76,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command()
     async def coffee(self, ctx: commands.Context):
-        """Send a random coffee image from alexflipnote API."""
+        """Send a random coffee image."""
 
         await self._send_other_msg(
             ctx,
@@ -92,7 +92,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command(aliases=["cuteness"])
     async def cute(self, ctx: commands.Context):
-        """Send a random cute images from random subreddits."""
+        """Send a random cute images."""
 
         await self._send_reddit_msg(
             ctx, name=_("a cute image"), emoji="❤️", sub=sub.CUTE, details=False
@@ -102,7 +102,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command(aliases=["dogs"])
     async def dog(self, ctx: commands.Context):
-        """Send a random dog image from random.dog API."""
+        """Send a random dog image."""
 
         await self._send_other_msg(
             ctx,
@@ -118,7 +118,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command(aliases=["dogsfact"])
     async def dogfact(self, ctx: commands.Context):
-        """Send a random dog fact with a random dog image from some-random-api.ml API."""
+        """Send a random dog fact with a random dog image."""
 
         await self._send_other_msg(
             ctx,
@@ -134,9 +134,9 @@ class RandImages(Core):
 
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.bot_has_permissions(embed_links=True)
-    @commands.command()
+    @commands.command(aliases=["ducc"])
     async def duck(self, ctx: commands.Context):
-        """Send a random duck image from random subreddits."""
+        """Send a random duck image."""
 
         await self._send_reddit_msg(
             ctx, name=_("a duck image"), emoji="\N{DUCK}", sub=sub.DUCKS, details=False
@@ -146,7 +146,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command(aliases=["ferrets"])
     async def ferret(self, ctx: commands.Context):
-        """Send a random ferrets images from random subreddits."""
+        """Send a random ferret image."""
 
         await self._send_reddit_msg(
             ctx, name=_("a ferret image"), emoji="❤️", sub=sub.FERRETS, details=False
@@ -156,7 +156,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command(aliases=["foxes"])
     async def fox(self, ctx: commands.Context):
-        """Send a random fox image from randomfox.ca API"""
+        """Send a random fox image."""
 
         await self._send_other_msg(
             ctx,
@@ -172,7 +172,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command(aliases=["pandas"])
     async def panda(self, ctx: commands.Context):
-        """Send a random panda image from some-random-api.ml API."""
+        """Send a random panda image."""
 
         await self._send_other_msg(
             ctx,
@@ -188,7 +188,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command()
     async def lizard(self, ctx: commands.Context):
-        """Send a random lizard image from nekos.life API"""
+        """Send a random lizard image."""
 
         await self._send_other_msg(
             ctx,
@@ -202,19 +202,9 @@ class RandImages(Core):
 
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.bot_has_permissions(embed_links=True)
-    @commands.command(aliases=["memes"])
-    async def meme(self, ctx: commands.Context):
-        """Send a random dank meme from random subreddits."""
-
-        await self._send_reddit_msg(
-            ctx, name=_("meme image"), emoji="\N{OK HAND SIGN}", sub=sub.MEMES, details=False
-        )
-
-    @commands.cooldown(1, 0.5, commands.BucketType.user)
-    @commands.bot_has_permissions(embed_links=True)
     @commands.command(aliases=["pandasfact"])
     async def pandafact(self, ctx: commands.Context):
-        """Send a random panda fact with a random panda image from some-random-api.ml API."""
+        """Send a random panda fact with a random panda image."""
 
         await self._send_other_msg(
             ctx,
@@ -232,7 +222,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command(aliases=["pikachu"])
     async def pika(self, ctx: commands.Context):
-        """Send a random Pikachu image or GIF from some-random-api.ml API."""
+        """Send a random Pikachu image or GIF."""
 
         await self._send_other_msg(
             ctx,
@@ -248,7 +238,7 @@ class RandImages(Core):
     @commands.bot_has_permissions(embed_links=True)
     @commands.command()
     async def shiba(self, ctx: commands.Context):
-        """Send a random shiba image from shiba.online API."""
+        """Send a random shiba image."""
 
         await self._send_other_msg(
             ctx,
