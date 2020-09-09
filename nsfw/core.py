@@ -113,7 +113,7 @@ class Core(commands.Cog):
             return
         if url.endswith(GOOD_EXTENSIONS):
             em = await self._embed(
-                color=0x891193,
+                color=0x4fe0e0,
                 title=(_("Here is {name} image ...") + " \N{EYES}").format(name=name),
                 description=bold(
                     _("[Link if you don't see image]({url})").format(url=url),
@@ -150,7 +150,7 @@ class Core(commands.Cog):
         if not data:
             return
         em = await self._embed(
-            color=0x891193,
+            color=0x4fe0e0,
             title=(_("Here is {name} image ...") + " \N{EYES}").format(name=name),
             description=bold(
                 _("[Link if you don't see image]({url})").format(url=data["img"][arg]),
@@ -227,7 +227,7 @@ def nsfwcheck():
             return False
         msg = _("You can't use this command in a non-NSFW channel !")
         try:
-            embed = discord.Embed(title="\N{LOCK} " + msg, color=0xAA0000)
+            embed = discord.Embed(title="\N{LOCK} " + msg, color=0x4fe0e0)
             await ctx.send(embed=embed)
         except discord.Forbidden:
             await ctx.send(msg)
