@@ -18,9 +18,6 @@ _ = Translator("Image", __file__)
 # TODO Needs a good rewrite and simplification.
 # TODO Implement the possibility to use my API as an option untoggled by default.
 
-    __author__ = "Predä"
-    __version__ = "1.1.9"
-
 @cog_i18n(_)
 class Core(commands.Cog):
 
