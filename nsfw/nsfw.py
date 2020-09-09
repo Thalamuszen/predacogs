@@ -47,7 +47,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(name="4k", aliases=["4K", "fourk"])
     async def four_k(self, ctx: commands.Context):
-        """Show some 4k images from random subreddits."""
+        """4k images."""
 
         await self._send_msg(ctx, _("4k"), sub=sub.FOUR_K)
 
@@ -56,7 +56,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["oface", "ofaces"])
     async def ahegao(self, ctx: commands.Context):
-        """Show some ahegao images from random subreddits."""
+        """Ahegao images."""
 
         await self._send_msg(ctx, _("ahegao"), sub=sub.AHEGAO)
 
@@ -65,7 +65,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["butt", "booty"])
     async def ass(self, ctx: commands.Context):
-        """Show some ass images from random subreddits."""
+        """Ass images."""
 
         await self._send_msg(ctx, _("ass"), sub=sub.ASS)
 
@@ -74,7 +74,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["asian"])
     async def asianporn(self, ctx: commands.Context):
-        """Show some asian porn images."""
+        """Asian porn."""
 
         await self._send_msg(ctx, _("asian porn"), sub=sub.ASIANPORN)
 
@@ -83,43 +83,25 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["sodomy"])
     async def anal(self, ctx: commands.Context):
-        """Show some anal images/gifs from random subreddits."""
+        """Anal images/gifs."""
 
         await self._send_msg(ctx, _("anal"), sub=sub.ANAL)
 
     @nsfwcheck()
     @commands.bot_has_permissions(embed_links=True)
     @commands.cooldown(1, 0.5, commands.BucketType.user)
-    @commands.command()
-    async def bbw(self, ctx: commands.Context):
-        """Show some bbw images."""
-
-        await self._send_msg(ctx, _("bbw"), sub=sub.BBW)
-
-    @nsfwcheck()
-    @commands.bot_has_permissions(embed_links=True)
-    @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["shibari"])
     async def bdsm(self, ctx: commands.Context):
-        """Show some bdsm from random subreddits."""
+        """BDSM images."""
 
         await self._send_msg(ctx, _("bdsm"), sub=sub.BDSM)
 
     @nsfwcheck()
     @commands.bot_has_permissions(embed_links=True)
     @commands.cooldown(1, 0.5, commands.BucketType.user)
-    @commands.command(aliases=["blackdick", "bcock", "bdick", "blackcocks", "blackdicks"])
-    async def blackcock(self, ctx: commands.Context):
-        """Show some blackcock images from random subreddits."""
-
-        await self._send_msg(ctx, _("black cock"), sub=sub.BLACKCOCK)
-
-    @nsfwcheck()
-    @commands.bot_has_permissions(embed_links=True)
-    @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["blowjobs", "blowj", "bjob", "fellatio", "fellation"])
     async def blowjob(self, ctx: commands.Context):
-        """Show some blowjob images/gifs from random subreddits."""
+        """Blowjob images/gifs."""
 
         await self._send_msg(ctx, _("blowjob"), sub=sub.BLOWJOB)
 
@@ -128,7 +110,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["boob", "boobies", "tits", "titties", "breasts", "breast"])
     async def boobs(self, ctx: commands.Context):
-        """Show some boobs images from random subreddits."""
+        """Boobs images."""
 
         await self._send_msg(ctx, _("boobs"), sub=sub.BOOBS)
 
@@ -137,7 +119,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["boless", "b_less"])
     async def bottomless(self, ctx: commands.Context):
-        """Show some bottomless images from random subreddits."""
+        """Bottomless images."""
 
         await self._send_msg(ctx, _("bottomless"), sub=sub.BOTTOMLESS)
 
@@ -146,7 +128,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command()
     async def cosplay(self, ctx: commands.Context):
-        """Show some nsfw cosplay images from random subreddits."""
+        """NSFW cosplay images."""
 
         await self._send_msg(ctx, _("nsfw cosplay"), sub=sub.COSPLAY)
 
@@ -155,7 +137,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["cunni", "pussyeating"])
     async def cunnilingus(self, ctx: commands.Context):
-        """Show some cunnilingus images from random subreddits."""
+        """Cunnilingus images."""
 
         await self._send_msg(ctx, _("cunnilingus"), sub=sub.CUNNI)
 
@@ -164,7 +146,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["cum", "cums", "cumshots"])
     async def cumshot(self, ctx: commands.Context):
-        """Show some cumshot images/gifs from random subreddits."""
+        """Cumshot images/gifs."""
 
         await self._send_msg(ctx, _("cumshot"), sub=sub.CUMSHOTS)
 
@@ -173,7 +155,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["deept", "deepthroating"])
     async def deepthroat(self, ctx: commands.Context):
-        """Show some deepthroat images from random subreddits."""
+        """Deepthroat images."""
 
         await self._send_msg(ctx, _("deepthroat"), sub=sub.DEEPTHROAT)
 
@@ -182,7 +164,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["cock"])
     async def dick(self, ctx: commands.Context):
-        """Show some dicks images from random subreddits."""
+        """Dick images."""
 
         await self._send_msg(ctx, _("dick"), sub=sub.DICK)
 
@@ -191,25 +173,16 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["doublep", "dpenetration", "doublepene", "doublepen"])
     async def doublepenetration(self, ctx: commands.Context):
-        """Show some double penetration images/gifs from random subreddits."""
+        """Double penetration images/gifs."""
 
         await self._send_msg(ctx, _("double penetration"), sub=sub.DOUBLE_P)
 
     @nsfwcheck()
     @commands.bot_has_permissions(embed_links=True)
     @commands.cooldown(1, 0.5, commands.BucketType.user)
-    @commands.command()
-    async def ebony(self, ctx: commands.Context):
-        """Show some ebony images."""
-
-        await self._send_msg(ctx, _("ebony"), sub=sub.EBONY)
-
-    @nsfwcheck()
-    @commands.bot_has_permissions(embed_links=True)
-    @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["facial"])
     async def facials(self, ctx: commands.Context):
-        """Show some facials images from random subreddits."""
+        """Facial images."""
 
         await self._send_msg(ctx, _("facials"), sub=sub.FACIALS)
 
@@ -218,7 +191,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["feets", "feetish"])
     async def feet(self, ctx: commands.Context):
-        """Show some feet images from random subreddits."""
+        """Feet images."""
 
         await self._send_msg(ctx, _("feets"), sub=sub.FEET)
 
@@ -227,7 +200,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command()
     async def femdom(self, ctx: commands.Context):
-        """Show some femdom images from random subreddits."""
+        """Femdom images."""
 
         await self._send_msg(ctx, _("femdom"), sub=sub.FEMDOM)
 
@@ -236,7 +209,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["futanari"])
     async def futa(self, ctx: commands.Context):
-        """Show some futa images from random subreddits."""
+        """Futa images."""
 
         await self._send_msg(ctx, _("futa"), sub=sub.FUTA)
 
@@ -245,7 +218,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["gpp"])
     async def gay(self, ctx: commands.Context):
-        """Show some gay porn from random subreddits."""
+        """Gay porn."""
 
         await self._send_msg(ctx, _("gay porn"), sub=sub.GAY_P)
 
@@ -254,7 +227,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["groups", "nudegroup", "nudegroups"])
     async def group(self, ctx: commands.Context):
-        """Show some groups nudes from random subreddits."""
+        """Group nudes."""
 
         await self._send_msg(ctx, "groups nudes", sub=sub.GROUPS)
 
@@ -263,7 +236,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["hentaigif"])
     async def hentai(self, ctx: commands.Context):
-        """Show some hentai images/gifs from Nekobot API."""
+        """Hentai images/gifs."""
 
         await self._send_other_msg(
             ctx,
@@ -278,7 +251,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["lesbians"])
     async def lesbian(self, ctx: commands.Context):
-        """Show some lesbian gifs or images from random subreddits."""
+        """Lesbian images/gifs."""
 
         await self._send_msg(ctx, _("lesbian"), sub=sub.LESBIANS)
 
@@ -287,7 +260,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["milfs"])
     async def milf(self, ctx: commands.Context):
-        """Show some milf images from random subreddits."""
+        """Milf images."""
 
         await self._send_msg(ctx, _("milf"), sub=sub.MILF)
 
@@ -311,7 +284,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["oralsex"])
     async def oral(self, ctx: commands.Context):
-        """Show some oral gifs or images from random subreddits."""
+        """Oral images/gifs."""
 
         await self._send_msg(ctx, _("oral"), sub=sub.ORAL)
 
@@ -320,7 +293,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["pgif", "prongif"])
     async def porngif(self, ctx: commands.Context):
-        """Show some porn gifs from Nekobot API."""
+        """Straight up porn gifs."""
 
         await self._send_other_msg(
             ctx,
@@ -335,7 +308,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["flashinggirl"])
     async def public(self, ctx: commands.Context):
-        """Show some public nude images from random subreddits."""
+        """Public nudes."""
 
         await self._send_msg(ctx, _("public nude"), sub=sub.PUBLIC)
 
@@ -344,7 +317,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["vagina", "puss"])
     async def pussy(self, ctx: commands.Context):
-        """Show some pussy nude images from random subreddits."""
+        """Pussy images."""
 
         await self._send_msg(ctx, _("pussy"), sub=sub.PUSSY)
 
@@ -353,7 +326,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command()
     async def realgirls(self, ctx: commands.Context):
-        """Show some real girls images from random subreddits."""
+        """Real girls."""
 
         await self._send_msg(ctx, _("real nudes"), sub=sub.REAL_GIRLS)
 
@@ -362,7 +335,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["redheads", "ginger", "gingers"])
     async def redhead(self, ctx: commands.Context):
-        """Show some red heads images from random subreddits."""
+        """Red head images."""
 
         await self._send_msg(ctx, _("red head"), sub=sub.REDHEADS)
 
@@ -371,7 +344,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["squirts"])
     async def squirt(self, ctx: commands.Context):
-        """Show some squirts images from random subreddits."""
+        """Squirt images."""
 
         await self._send_msg(ctx, _("squirt"), sub=sub.SQUIRTS)
 
@@ -380,7 +353,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["thighs", "legs"])
     async def thigh(self, ctx: commands.Context):
-        """Show some thighs images from random subreddits."""
+        """Thighs images."""
 
         await self._send_msg(ctx, _("thigh"), sub=sub.THIGHS)
 
@@ -389,7 +362,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["groupsex"])
     async def threesome(self, ctx: commands.Context):
-        """Show some threesome images."""
+        """Threesome images."""
 
         await self._send_msg(ctx, _("threesome"), sub=sub.THREESOME)
 
@@ -398,7 +371,7 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["traps", "trans", "girldick", "girldicks", "shemale", "shemales"])
     async def trap(self, ctx: commands.Context):
-        """Show some traps from random subreddits."""
+        """Traps images/gifs."""
 
         await self._send_msg(ctx, _("trap"), sub=sub.TRAPS)
 
@@ -407,15 +380,6 @@ class Nsfw(Core):
     @commands.cooldown(1, 0.5, commands.BucketType.user)
     @commands.command(aliases=["wild", "gwild"])
     async def gonewild(self, ctx: commands.Context):
-        """Show some gonewild images from random subreddits."""
+        """Gonewild images."""
 
         await self._send_msg(ctx, _("gonewild"), sub=sub.WILD)
-
-    @nsfwcheck()
-    @commands.bot_has_permissions(embed_links=True)
-    @commands.cooldown(1, 0.5, commands.BucketType.user)
-    @commands.command(aliases=["yiffs"])
-    async def yiff(self, ctx: commands.Context):
-        """Show some yiff images from random subreddits."""
-
-        await self._send_msg(ctx, _("yiff"), sub=sub.YIFF)
