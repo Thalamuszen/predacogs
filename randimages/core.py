@@ -21,9 +21,6 @@ _ = Translator("Image", __file__)
 @cog_i18n(_)
 class Core(commands.Cog):
 
-    __author__ = "Predä"
-    __version__ = "1.1.9"
-
     async def red_delete_data_for_user(self, **kwargs):
         """Nothing to delete."""
         return
