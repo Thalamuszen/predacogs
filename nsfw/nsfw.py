@@ -18,12 +18,6 @@ class Nsfw(Core):
     Send random NSFW images from random subreddits
     """
 
-    @commands.command()
-    async def nsfwversion(self, ctx: commands.Context):
-        """Get the version of the installed Nsfw cog."""
-
-        await self._version_msg(ctx, self.__version__, self.__author__)
-
     @nsfwcheck()
     @commands.command()
     @commands.cooldown(1, 3, commands.BucketType.user)
